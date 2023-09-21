@@ -21,18 +21,15 @@
   <body>
     <header>Header Goes Here</header>
     <div class="container">
-      <div class="box">
-        <ul id="output">
-          To Do Stuff Goes Here
-        </ul>
-      </div>
-      <br />
-      <input type="text" name="" id="entry" /><br />
-
-      <br />
-      <br />
-      <button class="btn btn-primary entr">Enter</button>
-      <button class="dlt btn btn-danger">Delete</button>
+      <form class="toDoForm">
+        <button class="btn btn-primary entr" type="submit">Enter</button>
+        <button class="btn btn-danger dlt">Delete</button>
+        <input type="text" class="entry" />
+        <div class="box"></div>
+      </form>
     </div>
+    <ul class="output">
+      To Do Stuff Goes Here
+    </ul>
   </body>
 </html>

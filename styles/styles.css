@@ -1,3 +1,26 @@
 @import "../assets/resets/normalize.css";
 @import "../assets/resets/reset.css";
 @import "../assets/resets/typography.css";
+
+header {
+  text-align: center;
+  max-width: 100%;
+  border: 5px solid red;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  border: 5px solid green;
+}
+.btn {
+  margin-right: 5px;
+}
+.container {
+  justify-content: center;
+  border: 5px solid blue;
+}
+
+/* div {
+  display: flex;
+} */
