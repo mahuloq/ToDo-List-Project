@@ -19,21 +19,18 @@ function testFunction(e) {
   e.preventDefault(e);
   console.log("Button Worked");
 
-  // const title = bookmarkInput.value;
-  // const bookmark = document.createElement("a");
-  // bookmark.className = "bookmark";
-  // bookmark.innerHTML = title;
-  // bookmark.href = "#";
-  // bookmark.target = "blank";
-  // bookmarksList.appendChild(bookmark);
-
   let addLi = document.createElement("li");
+
+  localStorage.setItem;
 
   addLi.appendChild(document.createTextNode(toDoInput.value));
   toDoList.appendChild(addLi);
 
   toDoForm.reset();
 }
+
+//get items from local storage
+const localTodo = JSON.parse(localStorage.getItem("currentToDo")) || [];
 
 deleteButton.addEventListener("click", testFunction);
 
