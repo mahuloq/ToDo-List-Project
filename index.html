@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
-    <link rel="stylesheet" href="/styles/styles.css" />
+
     <script src="scripts/app.js" defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -17,19 +17,21 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
-    <header>Header Goes Here</header>
     <div class="container">
+      <header>To Do List</header>
       <form class="toDoForm">
-        <button class="btn btn-primary entr" type="submit">Enter</button>
-        <button class="btn btn-danger dlt">Delete</button>
-        <input type="text" class="entry" />
-        <div class="box"></div>
+        <button class="btn btn-primary entr plus radius" type="submit"></button>
+
+        <input type="text" class="entry" placeholder="Enter To Do " />
       </form>
+      <ul class="output" id="list"></ul>
+      <div class="clearAll">
+        <div class="magic" id="tasksLeft">You have 0 tasks remaining!</div>
+        <button class="btn btn-primary clear" type="submit">Clear All</button>
+      </div>
     </div>
-    <ul class="output">
-      To Do Stuff Goes Here
-    </ul>
   </body>
 </html>

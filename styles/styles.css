@@ -1,26 +1,121 @@
 @import "../assets/resets/normalize.css";
 @import "../assets/resets/reset.css";
-@import "../assets/resets/typography.css";
+
+html {
+  height: 100%;
+}
+
+/* ul {
+  list-style-position: inside;
+  overflow: hidden;
+} */
+li {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  margin: 0 auto;
+  max-width: 50%;
+  justify-content: center;
+  text-overflow: initial;
+  overflow: hidden;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
 
 header {
   text-align: center;
+  color: green;
   max-width: 100%;
-  border: 5px solid red;
+  /* border: 5px solid red; */
+  margin-top: 5%;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 form {
   display: flex;
   justify-content: center;
-  border: 5px solid green;
+  /* border: 5px solid green; */
+}
+
+body {
+  background-image: linear-gradient(white, teal);
+  /* border: 5px solid pink; */
+  display: flexbox;
+}
+
+.clearAll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 .btn {
   margin-right: 5px;
 }
 .container {
   justify-content: center;
-  border: 5px solid blue;
+  max-width: 50%;
+  /* border: 5px solid blue; */
 }
 
-/* div {
-  display: flex;
-} */
+.container {
+  /* border: 5px solid yellow; */
+  background-color: whitesmoke;
+  max-width: 50%;
+  margin-top: 5%;
+}
+
+.plus {
+  --b: 4px; /* the thickness */
+  width: 40px; /* the size */
+  aspect-ratio: 1;
+  border: 10px solid #000; /* the outer space */
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #000 90deg,
+      #fff 0
+    )
+    calc(100% + var(--b) / 2) calc(100% + var(--b) / 2) / calc(50% + var(--b))
+    calc(50% + var(--b));
+  display: inline-block;
+}
+
+.radius {
+  border-radius: 50%;
+}
+
+#tasksLeft {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 680px) {
+  header {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 10px;
+  }
+
+  input {
+    max-width: 50%;
+  }
+
+  .magic {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 255px) {
+  .btn {
+    max-width: 50%;
+  }
+  .entr {
+    display: none;
+  }
+  header {
+    font-size: 15px;
+  }
+}
