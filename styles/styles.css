@@ -55,6 +55,36 @@ body {
 .btn {
   margin-right: 5px;
 }
+
+.btn:hover {
+  color: black;
+  background-color: red;
+}
+
+.btn:active {
+  color: black;
+  background-color: red;
+}
+
+.btn:focus {
+  color: black;
+  background-color: red;
+}
+
+.entry:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
+.entry:active {
+  color: black;
+  background-color: teal;
+}
+
+.entry:focus {
+  color: black;
+  background-color: teal;
+}
 .container {
   justify-content: center;
   max-width: 50%;
