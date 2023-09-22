@@ -5,10 +5,13 @@ html {
   height: 100%;
 }
 
-/* ul {
-  list-style-position: inside;
-  overflow: hidden;
-} */
+ul li {
+  text-decoration: none;
+}
+ul li input[type="checkbox"]:checked ~ del {
+  text-decoration: line-through;
+}
+
 li {
   display: block;
   text-align: center;
@@ -16,7 +19,7 @@ li {
   font-weight: bold;
   background-color: lightblue;
   margin: 0 auto;
-  max-width: 50%;
+  /* max-width: 50%; */
   justify-content: center;
   text-overflow: initial;
   overflow: hidden;
