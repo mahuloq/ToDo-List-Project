@@ -1,5 +1,5 @@
-@import "../assets/resets/normalize.css";
-@import "../assets/resets/reset.css";
+/* @import "../assets/resets/normalize.css";
+@import "../assets/resets/reset.css"; */
 
 html {
   height: 100%;
@@ -8,21 +8,21 @@ html {
 ul li {
   text-decoration: none;
 }
-ul li input[type="checkbox"]:checked ~ del {
+ul li [type="checkbox"]:checked ~ del {
   text-decoration: line-through;
 }
 
 li {
-  display: block;
+  /* display: block; */
   text-align: center;
   font-size: 25px;
   font-weight: bold;
   background-color: lightblue;
   margin: 0 auto;
   /* max-width: 50%; */
-  justify-content: center;
-  text-overflow: initial;
-  overflow: hidden;
+  /* justify-content: center; */
+  /* text-overflow: initial; */
+  /* overflow: hidden; */
   margin-bottom: 5px;
   margin-top: 5px;
 }
